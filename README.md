@@ -16,7 +16,7 @@ public_ip = "18.133.22.92"`
 
 ### Настройка instance:
 
-`Подставьте IP из вывода в ansible.inventory.yml`
+`Подставьте IP из вывода в ansible/inventory.yml`
 
 `Будет использован SSH-key terraform-ec2/key.pem`
 
