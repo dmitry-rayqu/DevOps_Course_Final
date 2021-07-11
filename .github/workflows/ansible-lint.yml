@@ -1,13 +1,14 @@
-name: Ansible Lint
+name: Check ansible playbook with ansible Lint 
+
 on: [push, pull_request]
+
 jobs:
-  build:
+  Check_ansible_playbook_with_ansible_lint:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
     - uses: actions/checkout@v2
     - name: Lint Ansible Playbook
       uses: ansible/ansible-lint-action@master
       with:
-        targets: "./ansible/*.yml"
+        targets: "./ansible/prod/*.yml"
         args: "-q"

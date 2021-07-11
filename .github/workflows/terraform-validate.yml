@@ -1,11 +1,13 @@
-name: 'Terraform'
-on: [push]
-  branches:
-    - 'main'
+name: Validate terraform
+
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
-  terraform-fmt:
-    name: 'Terraform'
+  fmt-check:
     runs-on: ubuntu-latest
+    name: Check formatting of terraform files
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,9 +16,10 @@ jobs:
         uses: dflook/terraform-fmt-check@v1
         with:
           path: terraform-ec2
-   validate:
+
+  validate:
     runs-on: ubuntu-latest
-    name: Validate terraform
+    name: Validate terraform configuration
     steps:
       - name: Checkout
         uses: actions/checkout@v2
