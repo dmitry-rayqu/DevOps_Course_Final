@@ -28,6 +28,6 @@ public_ip = "18.133.22.92"`
 
 ![image](https://i.ibb.co/VHmBFd8/image.png)
 
-### Почистить инфраструктуру
+### Очистить инфраструктуру
 
     ./terraform_destroy.sh
