@@ -1,6 +1,8 @@
 *.pem
 **/.aws/*
 **/.terraform/*
+terraform-ec2/.terraform.lock.hcl
+terraform-ec2/.terraform
 terraform-ec2/*.pem
 terraform-ec2/*.tfstate
 terraform-ec2/*.tfstate.backup
